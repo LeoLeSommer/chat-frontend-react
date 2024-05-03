@@ -1,7 +1,3 @@
-import "dotenv/config";
-
-require("dotenv").config();
-
 const configurations = {
   baseApiUrl: "http://localhost:9067",
   baseWebSocketUrl: "http://localhost:9068",

@@ -1,7 +1,5 @@
-import { Box, Container, Divider, Typography } from "@mui/material";
-import TextField from "../forms/TextField";
+import { Box, Container, Typography } from "@mui/material";
 import Form from "../forms/Form";
-import SubmitButton from "../forms/SubmitButton";
 import GoogleSignInButton from "../atomes/GoogleSignInButton";
 
 export default function LoginPage() {
@@ -14,7 +12,7 @@ export default function LoginPage() {
       </Box>
       <Form style={styles.form} onSubmit={() => {}}>
         <Box style={styles.form}>
-          <Typography variant="subtitle1" textAlign="center">
+          {/*<Typography variant="subtitle1" textAlign="center">
             Connexion par mail
           </Typography>
           <TextField
@@ -34,7 +32,7 @@ export default function LoginPage() {
           <SubmitButton variant="contained" fullWidth>
             Se connecter
           </SubmitButton>
-          <Divider style={styles.divider}>OU</Divider>
+  <Divider style={styles.divider}>OU</Divider>*/}
           <GoogleSignInButton />
         </Box>
       </Form>
