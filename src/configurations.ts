@@ -1,6 +1,6 @@
 const configurations = {
-  baseApiUrl: "http://localhost:9067",
-  baseWebSocketUrl: "http://localhost:9068",
+  baseApiUrl: "http://85.215.162.112:9067",
+  baseWebSocketUrl: "http://85.215.162.112:9068",
   firebaseConfig: {
     apiKey: "AIzaSyCIVlZbKSnEUroxWiv0HJdN3kY_2uvrxV0",
     authDomain: "chat-java-85cda.firebaseapp.com",
