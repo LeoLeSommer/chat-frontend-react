@@ -1,5 +1,5 @@
 {
-  "name": "chat-frontend",
+  "name": "chat-frontend-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,6 +19,7 @@
     "@types/react-dom": "^18.3.0",
     "axios": "^1.6.8",
     "firebase": "^10.11.1",
+    "pm2": "^5.3.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.51.3",
@@ -34,7 +35,9 @@
     "start": "PORT=9066 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "up": "PORT=9066 pm2 -f start --name chat-frontend-react 'react-scripts start'",
+    "down": "pm2 stop chat-frontend-react --watch && pm2 delete chat-frontend-react"
   },
   "eslintConfig": {
     "extends": [
